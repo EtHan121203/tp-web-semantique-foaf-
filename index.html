@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan - Profil Personnel</title>
+
+    <!-- Lien vers le profil FOAF -->
+    <link rel="alternate" type="application/rdf+xml" href="foaf.rdf" title="Profil FOAF" />
+    <link rel="meta" type="application/rdf+xml" href="foaf.rdf" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .foaf-link {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .foaf-link:hover {
+            background-color: #2980b9;
+        }
+
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .interest-tag {
+            background-color: #ecf0f1;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ethan</h1>
+
+        <div class="section">
+            <h2>À propos</h2>
+            <p>Étudiant en Master 2 ICONE à l'Université de La Rochelle, spécialisé dans le Web Sémantique et les
+                données interconnectées.</p>
+        </div>
+
+        <div class="section">
+            <h2>Formation</h2>
+            <p><strong>Master 2 ICONE</strong> - Université de La Rochelle<br>
+                Spécialisation : Web 3.0 et données sémantiques</p>
+        </div>
+
+        <div class="section">
+            <h2>Centres d'intérêt</h2>
+            <div class="interests">
+                <span class="interest-tag">Web Sémantique</span>
+                <span class="interest-tag">Données liées</span>
+                <span class="interest-tag">Développement web</span>
+                <span class="interest-tag">RDF/FOAF</span>
+                <span class="interest-tag">Ontologies</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Projets</h2>
+            <p>Actuellement en train de travailler sur les TPs de Web Sémantique, incluant la création de profils FOAF
+                et l'exploration des données interconnectées.</p>
+        </div>
+
+        <div class="section">
+            <h2>Profil FOAF</h2>
+            <p>Mon profil au format FOAF (Friend of a Friend) est disponible en RDF :</p>
+            <a href="foaf.rdf" class="foaf-link">Télécharger mon profil FOAF</a>
+
+            <p style="margin-top: 20px; font-size: 0.9em; color: #7f8c8d;">
+                Ce profil contient des métadonnées structurées sur ma personne selon le vocabulaire FOAF,
+                permettant l'interopérabilité dans le cadre du Web Sémantique.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Liens</h2>
+            <ul>
+                <li><a href="https://github.com/ethan" target="_blank">GitHub</a></li>
+                <li><a href="https://www.univ-larochelle.fr/" target="_blank">Université de La Rochelle</a></li>
+                <li><a href="http://xmlns.com/foaf/spec/" target="_blank">Spécification FOAF</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

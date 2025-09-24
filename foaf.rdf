@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <foaf:Person rdf:about="#me">
+    <!-- Informations personnelles de base -->
+    <foaf:name>Ethan</foaf:name>
+    <foaf:givenName>Ethan</foaf:givenName>
+    
+    <!-- Identité web -->
+    <foaf:homepage rdf:resource="index.html"/>
+    <foaf:weblog rdf:resource="https://github.com/ethan"/>
+    
+    <!-- Informations académiques -->
+    <foaf:currentProject>Master 2 ICONE - Web Sémantique</foaf:currentProject>
+    <foaf:schoolHomepage rdf:resource="https://www.univ-larochelle.fr/"/>
+    
+    <!-- Centres d'intérêt -->
+    <foaf:interest rdf:resource="https://dbpedia.org/resource/Semantic_Web"/>
+    <foaf:interest rdf:resource="https://dbpedia.org/resource/Linked_data"/>
+    <foaf:interest rdf:resource="https://dbpedia.org/resource/Web_development"/>
+    
+    <!-- Comptes en ligne -->
+    <foaf:account>
+      <foaf:OnlineAccount>
+        <foaf:accountServiceHomepage rdf:resource="https://github.com/"/>
+        <foaf:accountName>ethan</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:account>
+    
+    <!-- Connaissances (exemple avec le profil d'Agueritz mentionné dans le TP) -->
+    <foaf:knows>
+      <foaf:Person rdf:about="http://sixhills-consulting.com/foaf/agueritz/foaf.rdf#agueritz">
+        <foaf:name>Agueritz</foaf:name>
+        <foaf:homepage rdf:resource="http://sixhills-consulting.com/"/>
+      </foaf:Person>
+    </foaf:knows>
+    
+    <!-- Métadonnées du document -->
+    <foaf:made rdf:resource="#foafdoc"/>
+  </foaf:Person>
+  
+  <!-- Document FOAF -->
+  <foaf:PersonalProfileDocument rdf:about="#foafdoc">
+    <foaf:maker rdf:resource="#me"/>
+    <foaf:primaryTopic rdf:resource="#me"/>
+    <rdfs:label>Profil FOAF d'Ethan</rdfs:label>
+    <rdfs:comment>Profil FOAF créé dans le cadre du TP Web Sémantique - Master 2 ICONE</rdfs:comment>
+  </foaf:PersonalProfileDocument>
+
+</rdf:RDF>
