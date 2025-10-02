@@ -26,7 +26,15 @@ pip install -r requirements.txt
 
 ### Running the Test
 
-Execute the validation script:
+#### Option 1: Using the convenience script (recommended)
+
+```bash
+./run_validation.sh
+```
+
+This script will automatically install dependencies and run the validation test.
+
+#### Option 2: Running directly
 
 ```bash
 python3 test_foaf_validation.py
